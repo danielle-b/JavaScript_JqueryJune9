@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+		<!--<script src="js/scripts.js"></script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+		<script>
+      $(document).ready(function(){
+        $("#kanyepic").click(function(){
+          $("#kanyepic").fadeOut(3000);
+          $("#kanyepic").fadeIn(3000);
+          
+          $("#kim img").slideDown("slow");
+          $("#kim img").slideUp("slow");
+
+          
+        });
+    
+
+      
+        $("#kanyepic").hover(function(){
+          //console.log("here")
+         //$("#kanyepic").slideDown();
+          //$("#kanyepic").slideUp(5000);
+          //$("#kanyepic").fadeOut(3000);
+          //$("#kanyepic").fadeIn(3000);
+        });
+      });
+
+    </script>
+    <style>
+    #kanyepic img{
+      width:30%;
+      height: 50%;
+      position:absolute;
+    }
+
+    #kim img{
+      width:30%;
+      height: 50%;
+      display: none;
+    }
+
+    </style>
+</head>
+<body>
+<div id ="kanyepic">
+  <img src ="images/kanyewest.jpg">
+</div>
+<div id="kim">
+  <img src="images/kimk.jpg">
+</div>
+</body>
+</html>
